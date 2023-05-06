@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity"
+    android:background="@color/cn_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="638dp"
+
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/ImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/whitelogo" />
+
+        <TextView
+            android:id="@+id/txtHeadAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="2dp"
+            android:shadowColor="@color/black"
+            android:text="'Connect' About"
+            android:textColor="#fa983a"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingBottom="10dp"
+            android:text="'Connect' is an Android mobile application It is built using Java programming language and integrated with Firebase, a cloud-based platform that provides a wide range of backend services for mobile applications, including real-time database, authentication, and storage."
+            android:textAlignment="textStart"
+            android:textColor="@color/selectedGray"
+            android:textSize="15sp"
+            android:justificationMode="inter_word" />
+
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200sp"
+                    android:layout_centerInParent="true" />
+
+
+            </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/txtConclusion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingBottom="10dp"
+            android:text="Overall, 'Connect' aims to provide a reliable, user-friendly, and secure messaging platform for Android users, allowing them to stay connected with their friends and family from anywhere in the world."
+            android:textAlignment="textStart"
+            android:textColor="@color/selectedGray"
+            android:textSize="15sp"
+            android:justificationMode="inter_word" />
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

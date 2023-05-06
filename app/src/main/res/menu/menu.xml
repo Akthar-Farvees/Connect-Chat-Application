@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/settings"
+        android:title="Settings"/>
+
+    <item android:id="@+id/groupChat"
+        android:title="Group chat"/>
+
+    <item android:id="@+id/about"
+        android:title="About"/>
+
+    <item android:id="@+id/weather"
+        android:title="Weather"/>
+
+
+    <item android:id="@+id/location"
+        android:title="Location"/>
+
+    <item android:id="@+id/logout"
+        android:title="Logout"/>
+
+
+</menu>

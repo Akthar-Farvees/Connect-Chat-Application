@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/profile_image"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:src="@drawable/avatar3"
+        app:civ_border_color="#1B3047"
+        app:civ_border_width="0.9dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="6dp"
+        android:gravity="center"
+        android:orientation="vertical">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userNameList"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="Akthar Farvees"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastMessage"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text="Hello Akthar, How..."
+            android:textColor="@color/cn_primary_gray"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.9dp"
+            android:background="#9A9A9A" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

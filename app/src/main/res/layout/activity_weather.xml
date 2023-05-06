@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherActivity"
+    android:background="@drawable/w3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sens"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="C"
+            android:textColor="@color/white"
+            android:textSize="26sp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtWeatherHead"
+            android:layout_margin="15dp"
+            android:text="Weather Update"
+            android:textColor="#fa983a"
+            android:textSize="26sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCityName"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Enter City Name"
+            android:inputType="text"
+            android:padding="9dp"
+            android:textColor="@color/lightGrey"
+            android:textColorHint="@color/chatbackground"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCountryCode"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Enter Country Code (Optional)"
+            android:inputType="text"
+            android:padding="9dp"
+            android:textColor="@color/lightGrey"
+            android:textColorHint="@color/chatbackground"
+            android:textSize="16sp"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGet"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:text="Get"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:textAllCaps="false"
+            android:textColor="#fa983a"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="8dp"
+
+            android:onClick="getWeatherDetails"
+            />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/result"
+                />
+
+        </ScrollView>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
